@@ -1,0 +1,185 @@
+.contextual-guide-view {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 0.75rem;
+	gap: 0.5rem;
+}
+
+.contextual-guide-header {
+	flex: 0 0 auto;
+}
+
+.contextual-guide-title-line {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-bottom: 0.35rem;
+}
+
+.contextual-guide-title {
+	font-size: var(--font-ui-medium);
+	font-weight: 600;
+}
+
+.contextual-guide-body {
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow: auto;
+}
+
+.contextual-guide-footer {
+	flex: 0 0 auto;
+	border-top: 1px solid var(--background-modifier-border);
+	padding-top: 0.35rem;
+}
+
+.contextual-guide-footer-line {
+	color: var(--text-faint);
+	font-size: var(--font-ui-smaller);
+	line-height: 1.25;
+}
+
+.contextual-guide-label {
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	margin-bottom: 0.35rem;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.contextual-guide-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem;
+}
+
+.contextual-guide-tag {
+	background: var(--background-modifier-border);
+	border-radius: 999px;
+	font-size: var(--font-ui-smaller);
+	padding: 0.15rem 0.5rem;
+}
+
+.contextual-guide-empty-state,
+.contextual-guide-content {
+	line-height: 1.5;
+	word-break: break-word;
+}
+
+.contextual-guide-empty-state {
+	white-space: pre-wrap;
+}
+
+.contextual-guide-empty-state {
+	color: var(--text-muted);
+	margin-bottom: 1rem;
+}
+
+.contextual-guide-content {
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 0.75rem;
+	padding: 0.85rem;
+}
+
+/* remove title margins */
+.contextual-guide-body h1,
+.contextual-guide-body h2,
+.contextual-guide-body h3,
+.contextual-guide-body h4,
+.contextual-guide-body h5,
+.contextual-guide-body h6 {
+	margin: 0;
+}
+
+/* remove ul and p block margins */
+.contextual-guide-body ul,
+.contextual-guide-body p {
+	margin-block-start: .25rem;
+	margin-block-end: 0;
+}
+
+/* remove tags backgrounds */
+.contextual-guide-body .tag {
+	background: none;
+}
+
+.contextual-guide-content > :first-child {
+	margin-top: 0;
+}
+
+.contextual-guide-setting {
+	border-top: 1px solid var(--background-modifier-border);
+	margin-top: 1rem;
+	padding-top: 1rem;
+}
+
+.contextual-guide-rule {
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 0.6rem;
+	padding: 0.6rem;
+	margin-top: 0.6rem;
+}
+
+.contextual-guide-rule-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	margin-bottom: 0.45rem;
+}
+
+.contextual-guide-rule-title {
+	font-size: var(--font-ui-medium);
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.contextual-guide-rule-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.45rem 0.55rem;
+}
+
+.contextual-guide-field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+}
+
+.contextual-guide-field-span {
+	grid-column: 1 / -1;
+}
+
+.contextual-guide-field label {
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	line-height: 1.2;
+}
+
+.contextual-guide-inline-controls {
+	display: flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.contextual-guide-compact-input {
+	width: 100%;
+	min-height: 1.85rem;
+	padding: 0.2rem 0.45rem;
+	font-size: var(--font-ui-small);
+	line-height: 1.2;
+}
+
+.contextual-guide-compact-button {
+	white-space: nowrap;
+	font-size: var(--font-ui-smaller);
+	padding: 0.15rem 0.45rem;
+	line-height: 1.2;
+}
+
+.contextual-guide-setting textarea {
+	min-height: 10rem;
+}
