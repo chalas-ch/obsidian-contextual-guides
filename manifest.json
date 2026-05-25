@@ -3,7 +3,7 @@
 	"name": "Contextual Guides",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Show tag-based contextual note in a sidebar for the active note",
+	"description": "Show tag-based contextual note in a sidebar for the active note.",
 	"author": "Charles Chalas",
 	"isDesktopOnly": true
 }
